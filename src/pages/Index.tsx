@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -28,7 +27,7 @@ const Index = () => {
     },
     {
       name: "Himanshu",
-      role: "Co-Founder (C Kastariya Verna)",
+      role: "HOD of Hacking (C Kastariya Verna)",
       specialty: "Hacking & Design",
       image: "/placeholder.svg"
     }
@@ -285,13 +284,13 @@ const Index = () => {
           <div className="mt-16">
             <Card className="bg-gradient-to-br from-gray-900/40 to-purple-900/20 border-purple-500/20 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-2xl text-white text-center">Co-Founder Spotlight</CardTitle>
+                <CardTitle className="text-2xl text-white text-center">HOD Spotlight</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-center">
                   <h3 className="text-xl font-bold text-purple-400 mb-4">Himanshu (C Kastariya Verna)</h3>
                   <p className="text-gray-300 leading-relaxed">
-                    Our Co-Founder brings diverse expertise in coding, hacking, and ethical cybersecurity. 
+                    Our Head of Hacking brings diverse expertise in coding, hacking, and ethical cybersecurity. 
                     Beyond tech, Himanshu excels in cricket, graphic design, and chess. He finds balance through 
                     meditation, prayer, fitness, and wisdom from sacred texts including the Bhagavad Gita, 
                     Chanakya Neeti, and Quran.
