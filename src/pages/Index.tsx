@@ -21,76 +21,46 @@ const Index = () => {
 
   const teamMembers = [
     {
-      name: "Alex Chen",
-      role: "Team Captain & AI Lead",
-      specialty: "Machine Learning & Strategy",
+      name: "AVSC",
+      role: "Founder",
+      specialty: "Strategy & Electronics",
       image: "/placeholder.svg"
     },
     {
-      name: "Sarah Kumar",
-      role: "Hardware Engineer",
-      specialty: "Robotics & Electronics",
-      image: "/placeholder.svg"
-    },
-    {
-      name: "Marcus Johnson",
-      role: "Software Architect",
-      specialty: "Full-Stack Development",
-      image: "/placeholder.svg"
-    },
-    {
-      name: "Elena Rodriguez",
-      role: "Design & Innovation",
-      specialty: "UI/UX & Product Design",
+      name: "Himanshu",
+      role: "Co-Founder (C Kastariya Verna)",
+      specialty: "Hacking & Design",
       image: "/placeholder.svg"
     }
   ];
 
   const events = [
     {
-      title: "National Robotics Championship",
-      date: "March 2024",
-      result: "1st Place",
-      description: "Dominated the autonomous navigation challenge with our custom RC car."
+      title: "CyberStorm CTF Mumbai",
+      date: "2024",
+      result: "Participated",
+      description: "India's Largest CTF - Showcased our cybersecurity skills and strategic thinking."
     },
     {
-      title: "AI Hackathon 2024",
-      date: "January 2024",
-      result: "Winner",
-      description: "Developed breakthrough computer vision model in 48 hours."
-    },
-    {
-      title: "Cyber Defense Competition",
-      date: "November 2023",
-      result: "2nd Place",
-      description: "Advanced to nationals with our cybersecurity framework."
+      title: "Technoxian Robo Race",
+      date: "2024", 
+      result: "RC Car Challenge",
+      description: "Competed with our custom-built brushless motor RC car in this prestigious robotics competition."
     }
   ];
 
   const projects = [
     {
-      title: "Autonomous RC Racing Car",
+      title: "CyberStorm Participation Project",
+      category: "Cybersecurity",
+      description: "Comprehensive CTF preparation including tools development, OSINT techniques, and strategic methodologies.",
+      tech: ["OSINT", "CTF Tools", "Strategy", "Cybersecurity"]
+    },
+    {
+      title: "RC Car Project",
       category: "Robotics",
-      description: "Competition-grade autonomous vehicle with advanced computer vision and path optimization.",
-      tech: ["Arduino", "OpenCV", "Python", "3D Printing"]
-    },
-    {
-      title: "Neural Network Trading Bot",
-      category: "AI/ML",
-      description: "Deep learning model for cryptocurrency market analysis and automated trading.",
-      tech: ["TensorFlow", "Python", "APIs", "Cloud Computing"]
-    },
-    {
-      title: "Smart Campus IoT System",
-      category: "Software",
-      description: "Connected sensor network for real-time campus monitoring and optimization.",
-      tech: ["React", "Node.js", "IoT", "Database"]
-    },
-    {
-      title: "Quantum Computing Simulator",
-      category: "Research",
-      description: "Educational quantum circuit simulator for advanced physics coursework.",
-      tech: ["C++", "Quantum Algorithms", "Mathematics"]
+      description: "Brushless motor setup under ₹6000 with gear-driven design, specifically built for Technoxian competition.",
+      tech: ["Brushless Motors", "Gear Systems", "Electronics", "Mechanical Design"]
     }
   ];
 
@@ -279,8 +249,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-300 text-lg">
-                  To push the boundaries of technology and innovation, developing solutions that 
-                  solve real-world problems while fostering the next generation of tech leaders.
+                  ASTRA is a youth-led, mission-driven team formed to conquer tech, robotics, and cybersecurity challenges across India and beyond.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -293,7 +262,7 @@ const Index = () => {
               <CardContent>
                 <CardDescription className="text-gray-300 text-lg">
                   To become the premier competitive tech organization, known for excellence in 
-                  robotics, AI, and software development, inspiring innovation across industries.
+                  robotics, AI, and cybersecurity, inspiring innovation across industries.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -308,6 +277,26 @@ const Index = () => {
                   Innovation drives us, discipline guides us, and ambition propels us. We believe in 
                   collaborative excellence, ethical technology, and continuous learning.
                 </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Himanshu's Details */}
+          <div className="mt-16">
+            <Card className="bg-gradient-to-br from-gray-900/40 to-purple-900/20 border-purple-500/20 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-2xl text-white text-center">Co-Founder Spotlight</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-center">
+                  <h3 className="text-xl font-bold text-purple-400 mb-4">Himanshu (C Kastariya Verna)</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Our Co-Founder brings diverse expertise in coding, hacking, and ethical cybersecurity. 
+                    Beyond tech, Himanshu excels in cricket, graphic design, and chess. He finds balance through 
+                    meditation, prayer, fitness, and wisdom from sacred texts including the Bhagavad Gita, 
+                    Chanakya Neeti, and Quran.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -329,7 +318,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
               <Card key={index} className="bg-gradient-to-br from-gray-900/40 to-purple-900/20 border-purple-500/20 backdrop-blur-sm hover:scale-105 transition-all duration-300 group">
                 <CardHeader className="text-center">
@@ -370,7 +359,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {events.map((event, index) => (
               <Card key={index} className="bg-gradient-to-br from-gray-900/60 to-blue-900/20 border-blue-500/30 backdrop-blur-sm hover:scale-105 transition-all duration-300">
                 <CardHeader>
@@ -480,16 +469,6 @@ const Index = () => {
                       className="bg-black/50 border-purple-500/30 text-white placeholder:text-gray-500 focus:border-purple-400"
                     />
                   </div>
-                </div>
-                <div>
-                  <label htmlFor="interest" className="block text-sm font-medium text-gray-300 mb-2">
-                    Interest
-                  </label>
-                  <Input 
-                    id="interest"
-                    placeholder="Membership, Collaboration, Partnership..."
-                    className="bg-black/50 border-purple-500/30 text-white placeholder:text-gray-500 focus:border-purple-400"
-                  />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
